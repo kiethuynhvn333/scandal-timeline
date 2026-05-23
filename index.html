@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nghệ Sĩ & Ma Túy — Hồ Sơ 1990–2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ─── TOKENS ─────────────────────────────────────────────── */
+:root {
+  --bg:          #0a0a0a;
+  --bg2:         #111111;
+  --bg3:         #181818;
+  --text:        #f0ece4;
+  --text-mid:    #999;
+  --text-dim:    #555;
+  --accent:      #f5c642;
+  --border:      rgba(255,255,255,0.07);
+  --border-mid:  rgba(255,255,255,0.13);
+
+  /* specialty colours */
+  --singer:   #D85A30;
+  --actor:    #378ADD;
+  --model:    #1D9E75;
+  --fashion:  #7F77DD;
+  --rapper:   #888780;
+
+  /* severity palette */
+  --sev1: #444;
+  --sev2: #D4A853;
+  --sev3: #E07B54;
+  --sev4: #D85A30;
+  --sev5: #c0392b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── HEADER ─────────────────────────────────────────────── */
+header {
+  position: sticky; top: 0; z-index: 200;
+  background: rgba(10,10,10,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  height: 52px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  display: flex; align-items: center; gap: 10px;
+}
+.pulse {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .4; transform: scale(.7); }
+}
+nav {
+  display: flex; gap: 1.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--text-mid);
+}
+nav a { color: inherit; text-decoration: none; transition: color .15s; }
+nav a:hover { color: var(--text); }
+
+/* ─── HERO ────────────────────────────────────────────────── */
+.hero {
+  padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem) clamp(3rem, 7vw, 5rem);
+  border-bottom: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(245,198,66,.035) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero-label::before {
+  content: ''; display: block; width: 32px; height: 1px; background: var(--accent);
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-weight: 900;
+  line-height: 1.0;
+  letter-spacing: -.02em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  max-width: 16ch;
+}
+.hero h1 em {
+  font-style: italic; color: var(--accent);
+}
+.hero-sub {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--text-mid);
+  max-width: 56ch;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+.hero-meta {
+  display: flex; flex-wrap: wrap; gap: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--text-dim);
+}
+.hero-meta span strong {
+  display: block;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -.02em;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+/* ─── SECTION SHELL ──────────────────────────────────────── */
+section {
+  padding: clamp(3rem, 7vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--border);
+}
+.section-header {
+  display: flex; align-items: baseline; gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.section-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); flex-shrink: 0;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700; color: var(--text);
+}
+
+/* ─── STATS ROW ───────────────────────────────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.stat-cell {
+  background: var(--bg2);
+  padding: 1.5rem 1.75rem;
+  transition: background .15s;
+}
+.stat-cell:hover { background: var(--bg3); }
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem; font-weight: 700;
+  color: var(--text); line-height: 1;
+  margin-bottom: .4rem;
+}
+.stat-num span { font-size: 1.4rem; color: var(--accent); }
+.stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--text-mid);
+}
+.stat-sub {
+  font-size: 12px; color: var(--text-dim); margin-top: 3px;
+}
+
+/* ─── CASE CARDS ──────────────────────────────────────────── */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.case-card {
+  background: #161616;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex; flex-direction: column; gap: .6rem;
+  transition: background .15s, border-color .15s, box-shadow .15s;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+.case-card::before {
+  content: '';
+  position: absolute; left: 0; top: 0; right: 0;
+  height: 2px;
+}
+.case-card:hover {
+  background: #1d1d1d;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.case-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--accent); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px; margin-top: 6px;
+  border: 1px solid rgba(245,198,66,.3);
+  border-radius: 6px;
+  background: rgba(245,198,66,.06);
+  align-self: flex-start;
+  transition: background .15s, border-color .15s, color .15s, box-shadow .15s;
+}
+.case-link::after { content: '↗'; font-size: 11px; }
+.case-link:hover {
+  background: rgba(245,198,66,.14);
+  border-color: rgba(245,198,66,.6);
+  box-shadow: 0 0 12px rgba(245,198,66,.12);
+  color: #fff;
+}
+.card-top {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.card-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--text-dim);
+}
+.card-severity {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; letter-spacing: .1em;
+  text-transform: uppercase; padding: 2px 7px;
+  border-radius: 4px; border: 1px solid;
+}
+.sev-2 { color: #D4A853; border-color: rgba(212,168,83,.3); background: rgba(212,168,83,.07); }
+.sev-3 { color: #E07B54; border-color: rgba(224,123,84,.3); background: rgba(224,123,84,.07); }
+.sev-4 { color: #D85A30; border-color: rgba(216,90,48,.3); background: rgba(216,90,48,.07); }
+.sev-5 { color: #c0392b; border-color: rgba(192,57,43,.4); background: rgba(192,57,43,.1); }
+.card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem; font-weight: 700;
+  color: var(--text); line-height: 1.2;
+}
+.card-specialty {
+  font-size: 11.5px; color: var(--text-mid);
+}
+.card-desc {
+  font-size: 12px; color: var(--text-dim);
+  line-height: 1.65;
+  display: -webkit-box; -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-pill {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; letter-spacing: .1em; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 4px;
+  margin-right: 4px; margin-top: 2px;
+}
+
+/* Specialty neon borders */
+.spec-singer  { border-color: rgba(216,90,48,.45);  box-shadow: 0 0 0 1px rgba(216,90,48,.1),  0 0 20px rgba(216,90,48,.06); }
+.spec-actor   { border-color: rgba(55,138,221,.45); box-shadow: 0 0 0 1px rgba(55,138,221,.1), 0 0 20px rgba(55,138,221,.06); }
+.spec-model   { border-color: rgba(29,158,117,.45); box-shadow: 0 0 0 1px rgba(29,158,117,.1), 0 0 20px rgba(29,158,117,.06); }
+.spec-fashion { border-color: rgba(127,119,221,.45);box-shadow: 0 0 0 1px rgba(127,119,221,.1),0 0 20px rgba(127,119,221,.06); }
+.spec-rapper  { border-color: rgba(136,135,128,.4); box-shadow: 0 0 0 1px rgba(136,135,128,.1),0 0 20px rgba(136,135,128,.04); }
+.spec-singer::before  { background: var(--singer); }
+.spec-actor::before   { background: var(--actor); }
+.spec-model::before   { background: var(--model); }
+.spec-fashion::before { background: var(--fashion); }
+.spec-rapper::before  { background: var(--rapper); }
+
+.spec-singer:hover  { border-color: rgba(216,90,48,.7);  box-shadow: 0 0 0 1px rgba(216,90,48,.2),  0 4px 28px rgba(216,90,48,.15); }
+.spec-actor:hover   { border-color: rgba(55,138,221,.7); box-shadow: 0 0 0 1px rgba(55,138,221,.2), 0 4px 28px rgba(55,138,221,.15); }
+.spec-model:hover   { border-color: rgba(29,158,117,.7); box-shadow: 0 0 0 1px rgba(29,158,117,.2), 0 4px 28px rgba(29,158,117,.15); }
+.spec-fashion:hover { border-color: rgba(127,119,221,.7);box-shadow: 0 0 0 1px rgba(127,119,221,.2),0 4px 28px rgba(127,119,221,.15); }
+.spec-rapper:hover  { border-color: rgba(136,135,128,.6);box-shadow: 0 0 0 1px rgba(136,135,128,.2),0 4px 28px rgba(136,135,128,.10); }
+
+/* ─── DASHBOARD EMBED ─────────────────────────────────────── */
+.dashboard-shell {
+  background: #141414;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.04), 0 8px 40px rgba(0,0,0,0.5);
+}
+.dashboard-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding: .8rem 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  background: #1c1c1c;
+}
+.dash-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+}
+.dashboard-inner {
+  padding: 1.25rem 1.5rem 1.5rem;
+
+  /* pass design tokens into the embedded widget */
+  --color-background-primary:   var(--bg2);
+  --color-background-secondary: var(--bg3);
+  --color-text-primary:         var(--text);
+  --color-text-secondary:       var(--text-mid);
+  --color-border-secondary:     var(--border-mid);
+  --color-border-tertiary:      var(--border);
+}
+
+/* ─── OBSERVATIONS ────────────────────────────────────────── */
+.obs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.obs-card {
+  background: var(--bg2);
+  padding: 1.75rem 2rem;
+  transition: background .15s;
+}
+.obs-card:hover { background: var(--bg3); }
+.obs-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--accent);
+  margin-bottom: .75rem;
+}
+.obs-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; font-weight: 700;
+  color: var(--text); margin-bottom: .6rem; line-height: 1.3;
+}
+.obs-card p {
+  font-size: 13px; color: var(--text-mid);
+  line-height: 1.8;
+}
+.obs-card p strong { color: var(--text); font-weight: 500; }
+
+/* ─── TIMELINE BAR ────────────────────────────────────────── */
+.timeline-bar {
+  display: flex; height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px; overflow: hidden;
+  margin-bottom: 1rem;
+}
+.tl-seg {
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; letter-spacing: .08em;
+  color: rgba(255,255,255,.55);
+  transition: opacity .15s; cursor: default;
+  position: relative;
+}
+.tl-seg:hover { opacity: .8; }
+.tl-tooltip {
+  position: absolute; bottom: calc(100% + 8px);
+  left: 50%; transform: translateX(-50%);
+  background: var(--bg3); border: 1px solid var(--border-mid);
+  border-radius: 6px; padding: 5px 9px;
+  font-size: 10px; white-space: nowrap;
+  color: var(--text); pointer-events: none;
+  opacity: 0; transition: opacity .1s;
+}
+.tl-seg:hover .tl-tooltip { opacity: 1; }
+
+/* ─── FILTER BAR ─────────────────────────────────────────── */
+.filter-bar {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 1.5rem;
+}
+.filter-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 20px; border: 1px solid var(--border-mid);
+  background: transparent; color: var(--text-mid); cursor: pointer;
+  transition: all .15s;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: var(--accent); border-color: var(--accent);
+  color: #000;
+}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+footer {
+  padding: 2.5rem clamp(1.5rem, 5vw, 4rem);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--text-dim);
+}
+footer a { color: inherit; text-decoration: none; }
+footer a:hover { color: var(--text-mid); }
+
+/* ─── UTILS ───────────────────────────────────────────────── */
+.divider {
+  width: 40px; height: 2px;
+  background: var(--accent);
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 600px) {
+  nav { display: none; }
+  .hero h1 { font-size: 2.6rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ─────────────────────────────────────────────── -->
+<header>
+  <div class="logo">
+    <span class="pulse"></span>
+    Scandal Archive · VN
+  </div>
+  <nav>
+    <a href="#stats">Thống kê</a>
+    <a href="#cases">Hồ sơ</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#observations">Nhận định</a>
+  </nav>
+</header>
+
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<div class="hero">
+  <div class="hero-label">Hồ sơ điều tra · 1990 – 2026</div>
+  <h1>Nghệ Sĩ<br>& <em>Ma Túy</em></h1>
+  <p class="hero-sub">
+    16 nghệ sĩ. 36 năm. Từ những tên tuổi đỉnh cao đến những gương mặt đã lu mờ —
+    một bức tranh toàn cảnh về ma túy trong showbiz Việt Nam, được lập bảng từ dữ liệu
+    công khai và hồ sơ tư pháp.
+  </p>
+  <div class="hero-meta">
+    <span><strong>16</strong>Nghệ sĩ</span>
+    <span><strong>36<span>năm</span></strong>Giai đoạn</span>
+    <span><strong>81<span>%</span></strong>Nam giới</span>
+    <span><strong>36</strong>Tuổi TB</span>
+    <span><strong>5</strong>Chuyên môn</span>
+  </div>
+</div>
+
+<!-- ── STATS ──────────────────────────────────────────────── -->
+<section id="stats">
+  <div class="section-header">
+    <span class="section-num">01 —</span>
+    <h2 class="section-title">Tổng quan số liệu</h2>
+  </div>
+
+  <!-- Specialty timeline bar -->
+  <div style="margin-bottom:.5rem;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim)">Phân bố theo chuyên môn</div>
+  <div class="timeline-bar" style="margin-bottom:1.5rem">
+    <div class="tl-seg" style="width:43%;background:var(--singer)">
+      Ca sĩ 43%
+      <div class="tl-tooltip">Ca sĩ / Rapper — 7 người</div>
+    </div>
+    <div class="tl-seg" style="width:37%;background:var(--actor)">
+      Diễn viên 37%
+      <div class="tl-tooltip">Diễn viên — 6 người</div>
+    </div>
+    <div class="tl-seg" style="width:12%;background:var(--model)">
+      Mẫu
+      <div class="tl-tooltip">Người mẫu — 2 người</div>
+    </div>
+    <div class="tl-seg" style="width:5%;background:var(--fashion)">
+      <div class="tl-tooltip">NTK thời trang — 1 người</div>
+    </div>
+    <div class="tl-seg" style="width:4%;background:var(--rapper)">
+      <div class="tl-tooltip">Rapper — 1 người</div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="stat-num">16</div>
+      <div class="stat-label">Tổng nghệ sĩ</div>
+      <div class="stat-sub">Từ 1990 đến tháng 5/2026</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">36</div>
+      <div class="stat-label">Tuổi trung bình</div>
+      <div class="stat-sub">Khi bị phát hiện / bắt giữ</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">50<span>%</span></div>
+      <div class="stat-label">Nhóm 30–39</div>
+      <div class="stat-sub">Độ tuổi phổ biến nhất</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Nữ nghệ sĩ</div>
+      <div class="stat-sub">Cả 3 bị bắt từ 2023 trở đi</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">37<span>%</span></div>
+      <div class="stat-label">Đỉnh sự nghiệp</div>
+      <div class="stat-sub">Ma túy không chỉ là thuốc giảm đau</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">74</div>
+      <div class="stat-label">Đối tượng</div>
+      <div class="stat-sub">Chuyên án 426A — tháng 5/2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CASE DIRECTORY ──────────────────────────────────────── -->
+<section id="cases">
+  <div class="section-header">
+    <span class="section-num">02 —</span>
+    <h2 class="section-title">Hồ sơ từng vụ</h2>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterCards('all', this)">Tất cả</button>
+    <button class="filter-btn" onclick="filterCards('Ca sĩ', this)" style="--ac:var(--singer)">Ca sĩ</button>
+    <button class="filter-btn" onclick="filterCards('Diễn viên', this)" style="--ac:var(--actor)">Diễn viên</button>
+    <button class="filter-btn" onclick="filterCards('Người mẫu', this)" style="--ac:var(--model)">Người mẫu</button>
+    <button class="filter-btn" onclick="filterCards('NTK thời trang', this)" style="--ac:var(--fashion)">NTK</button>
+    <button class="filter-btn" onclick="filterCards('Rapper', this)" style="--ac:var(--rapper)">Rapper</button>
+  </div>
+
+  <div class="case-grid" id="caseGrid">
+
+    <div class="case-card spec-actor" data-spec="Diễn viên">
+      <div class="card-top"><span class="card-year">1990 · ước tính</span><span class="card-severity sev-3">Mức 3</span></div>
+      <div class="card-name">Thương Tín</div>
+      <div class="card-specialty">Diễn viên · 34 tuổi</div>
+      <div class="card-desc">Nghiện heroin từ ~1990 sau khi vợ mất. Dùng hơn 13 năm. Tự cai thành công 2003, không bị truy tố.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(55,138,221,.12);color:var(--actor);border:1px solid rgba(55,138,221,.2)">Tự cai</span>
+        <span class="card-pill" style="background:rgba(212,168,83,.1);color:#D4A853;border:1px solid rgba(212,168,83,.2)">Heroin</span>
+      </div>
+      <a class="case-link" href="https://kenh14.vn/thuong-tin-va-hiep-ga-da-sa-sut-su-nghiep-nhu-the-nao-khi-dinh-vao-ma-tuy-20220613101109226.chn" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-actor" data-spec="Diễn viên">
+      <div class="card-top"><span class="card-year">2000 · ước tính</span><span class="card-severity sev-4">Mức 4</span></div>
+      <div class="card-name">Nguyễn Huỳnh</div>
+      <div class="card-specialty">Diễn viên · 33 tuổi</div>
+      <div class="card-desc">Dính ma túy tại LHP Hà Nội ~2000. Hai lần vào trại cai nghiện. Qua đời tháng 5/2009 vì bệnh, tuổi 42.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(192,57,43,.1);color:#c0392b;border:1px solid rgba(192,57,43,.25)">Qua đời 2009</span>
+        <span class="card-pill" style="background:rgba(212,168,83,.1);color:#D4A853;border:1px solid rgba(212,168,83,.2)">Heroin</span>
+      </div>
+      <a class="case-link" href="https://nld.com.vn/van-hoa-van-nghe/dien-vien-nguyen-huynh-gia-tu-cuoc-song-20090530025042784.htm" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-actor" data-spec="Diễn viên">
+      <div class="card-top"><span class="card-year">2002 · ước tính</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Phạm Minh Quốc</div>
+      <div class="card-specialty">Diễn viên · 30 tuổi</div>
+      <div class="card-desc">Tiếng đồn nghiện từ 2001–2003. Bị tù vì tàng trữ. Sự nghiệp chấm dứt hoàn toàn tại Nhà hát Kịch HN.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(55,138,221,.12);color:var(--actor);border:1px solid rgba(55,138,221,.2)">Tàng trữ</span>
+      </div>
+      <a class="case-link" href="https://tienphong.vn/xung-quanh-viec-dien-vien-minh-quoc-dinh-ma-tuy-post122102.tpo" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-actor" data-spec="Diễn viên">
+      <div class="card-top"><span class="card-year">Tháng 4 · 2007</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Hiệp "Gà"</div>
+      <div class="card-specialty">Diễn viên hài · 30 tuổi</div>
+      <div class="card-desc">27/4/2007 — Bị bắt tại Hà Nội. Tàng trữ 0.19g heroin. Án 24 tháng, ngồi 17 tháng.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(212,168,83,.1);color:#D4A853;border:1px solid rgba(212,168,83,.2)">Heroin</span>
+        <span class="card-pill" style="background:rgba(55,138,221,.12);color:var(--actor);border:1px solid rgba(55,138,221,.2)">17 tháng tù</span>
+      </div>
+      <a class="case-link" href="https://vnexpress.net/dien-vien-hiep-ga-linh-an-2-nam-tu-2087402.html" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-singer" data-spec="Ca sĩ">
+      <div class="card-top"><span class="card-year">Tháng 3 · 2018</span><span class="card-severity sev-5">Mức 5</span></div>
+      <div class="card-name">Châu Việt Cường</div>
+      <div class="card-specialty">Ca sĩ · 36 tuổi</div>
+      <div class="card-desc">5/3/2018 — Dùng ma túy đá, ảo giác nhét tỏi vào miệng cô gái gây tử vong. Án 11 năm tù. Ra tù sớm 5/1/2025.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(192,57,43,.12);color:#c0392b;border:1px solid rgba(192,57,43,.3)">Gây chết người</span>
+        <span class="card-pill" style="background:rgba(216,90,48,.1);color:var(--singer);border:1px solid rgba(216,90,48,.2)">Meth</span>
+        <span class="card-pill" style="background:rgba(55,138,221,.12);color:var(--actor);border:1px solid rgba(55,138,221,.2)">11 năm tù</span>
+      </div>
+      <a class="case-link" href="https://znews.vn/ca-si-chau-viet-cuong-duoc-giam-an-con-11-nam-tu-post976025.html" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-actor" data-spec="Diễn viên">
+      <div class="card-top"><span class="card-year">Tháng 6 · 2022</span><span class="card-severity sev-3">Mức 3</span></div>
+      <div class="card-name">Hữu Tín</div>
+      <div class="card-specialty">Diễn viên hài · 35 tuổi</div>
+      <div class="card-desc">11/6/2022 — Bị bắt tại chung cư Giai Việt Q.8, TP.HCM. Khai nghiện 3 năm. Án 7 năm 6 tháng tù.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(55,138,221,.12);color:var(--actor);border:1px solid rgba(55,138,221,.2)">7.5 năm tù</span>
+        <span class="card-pill" style="background:rgba(212,168,83,.1);color:#D4A853;border:1px solid rgba(212,168,83,.2)">Nghiện 3 năm</span>
+      </div>
+      <a class="case-link" href="https://phunuvietnam.vn/dien-vien-huu-tin-linh-an-7-nam-6-thang-tu-20230428135713719.htm" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-actor" data-spec="Diễn viên">
+      <div class="card-top"><span class="card-year">Tháng 3 · 2023</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Lệ Hằng</div>
+      <div class="card-specialty">Diễn viên · 48 tuổi</div>
+      <div class="card-desc">10/3/2023 — Bị bắt mua bán ma túy tại Khâm Thiên, Hà Nội. Đã giải nghệ từ 2012, bán lẻ để kiếm sống.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(212,168,83,.1);color:#D4A853;border:1px solid rgba(212,168,83,.2)">Mua bán</span>
+      </div>
+      <a class="case-link" href="https://vnexpress.net/dien-vien-le-hang-bi-dieu-tra-mua-ban-ma-tuy-4597048.html" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-singer" data-spec="Ca sĩ">
+      <div class="card-top"><span class="card-year">Tháng 6 · 2024</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Chu Bin</div>
+      <div class="card-specialty">Ca sĩ · 39 tuổi</div>
+      <div class="card-desc">6/6/2024 — Bị tạm giữ cùng 5 người tại Q.10, TP.HCM. Tổ chức sử dụng ma túy. Xử lý hành chính.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(216,90,48,.1);color:var(--singer);border:1px solid rgba(216,90,48,.2)">Hành chính</span>
+      </div>
+      <a class="case-link" href="https://nld.com.vn/ca-si-chu-bin-bi-bat-lien-quan-ma-tuy-196240606191443901.htm" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-model" data-spec="Người mẫu">
+      <div class="card-top"><span class="card-year">Tháng 6 · 2024</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Nhikolai Đinh</div>
+      <div class="card-specialty">Người mẫu · 29 tuổi</div>
+      <div class="card-desc">25/6/2024 — Bị bắt cùng 9 người tại Mả Lạng Q.1, TP.HCM. Tàng trữ ma túy đá. Án 2 năm tù.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(29,158,117,.1);color:var(--model);border:1px solid rgba(29,158,117,.2)">Meth</span>
+        <span class="card-pill" style="background:rgba(29,158,117,.1);color:var(--model);border:1px solid rgba(29,158,117,.2)">2 năm tù</span>
+      </div>
+      <a class="case-link" href="https://vnexpress.net/nguoi-mau-nhikolai-dinh-bi-bat-vi-tang-tru-ma-tuy-4762598.html" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-singer" data-spec="Ca sĩ">
+      <div class="card-top"><span class="card-year">Tháng 11 · 2024</span><span class="card-severity sev-3">Mức 3</span></div>
+      <div class="card-name">Chi Dân</div>
+      <div class="card-specialty">Ca sĩ · 35 tuổi</div>
+      <div class="card-desc">14/11/2024 — Bị bắt cùng An Tây tại TP.HCM. Tổ chức sử dụng ketamine cùng anh trai và nhóm bạn.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(216,90,48,.1);color:var(--singer);border:1px solid rgba(216,90,48,.2)">Ketamine</span>
+        <span class="card-pill" style="background:rgba(216,90,48,.1);color:var(--singer);border:1px solid rgba(216,90,48,.2)">Tổ chức</span>
+      </div>
+      <a class="case-link" href="https://vov.gov.vn/cu-truot-dai-cua-ca-si-chi-dan-khi-ru-re-nhom-ban-su-dung-ma-tuy-dtnew-1142669" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-model" data-spec="Người mẫu">
+      <div class="card-top"><span class="card-year">Tháng 11 · 2024</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">An Tây</div>
+      <div class="card-specialty">Người mẫu · 29 tuổi</div>
+      <div class="card-desc">14/11/2024 — Cùng vụ Chi Dân. Khởi tố thêm tội tàng trữ. Người mẫu lai Tây có profile nổi bật.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(29,158,117,.1);color:var(--model);border:1px solid rgba(29,158,117,.2)">Tàng trữ</span>
+        <span class="card-pill" style="background:rgba(29,158,117,.1);color:var(--model);border:1px solid rgba(29,158,117,.2)">Ketamine</span>
+      </div>
+      <a class="case-link" href="https://nld.com.vn/cong-an-tp-hcm-chinh-thuc-bat-ca-si-chi-dan-nguoi-mau-an-tay-196241114115000059.htm" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-fashion" data-spec="NTK thời trang">
+      <div class="card-top"><span class="card-year">Tháng 6 · 2025</span><span class="card-severity sev-3">Mức 3</span></div>
+      <div class="card-name">Nguyễn Công Trí</div>
+      <div class="card-specialty">NTK thời trang · 47 tuổi</div>
+      <div class="card-desc">23/6/2025 — Phát hiện dùng ma túy tại nhà riêng TP.HCM. Thiết kế cho Beyoncé, Zendaya, Michelle Obama.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(127,119,221,.1);color:var(--fashion);border:1px solid rgba(127,119,221,.2)">Anh cả làng mốt</span>
+      </div>
+      <a class="case-link" href="https://www.sggp.org.vn/su-dung-ma-tuy-tai-nha-rieng-nha-thiet-ke-nguyen-cong-tri-bi-bat-post805068.html" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-rapper" data-spec="Rapper">
+      <div class="card-top"><span class="card-year">Tháng 7 · 2025</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Bình Gold</div>
+      <div class="card-specialty">Rapper · 28 tuổi</div>
+      <div class="card-desc">23/7/2025 — Lái xe lạng lách cao tốc Nội Bài–Lào Cai, dương tính cần sa + ketamine. 26/7 bị bắt thêm vì cướp taxi.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(136,135,128,.1);color:var(--rapper);border:1px solid rgba(136,135,128,.2)">Cần sa · Ketamine</span>
+        <span class="card-pill" style="background:rgba(192,57,43,.1);color:#c0392b;border:1px solid rgba(192,57,43,.25)">Cướp</span>
+      </div>
+      <a class="case-link" href="https://vnexpress.net/rapper-binh-gold-tiep-tuc-duong-tinh-voi-ma-tuy-lai-cuop-taxi-4919259.html" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-singer" data-spec="Ca sĩ">
+      <div class="card-top"><span class="card-year">Tháng 5 · 2026</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Miu Lê</div>
+      <div class="card-specialty">Ca sĩ · 34 tuổi</div>
+      <div class="card-desc">10/5/2026 — Bị bắt tại bãi tắm Cát Bà lúc 12:30. Dương tính meth, ketamine và MDMA. Xử lý hành chính.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(216,90,48,.1);color:var(--singer);border:1px solid rgba(216,90,48,.2)">Meth · Ketamine · MDMA</span>
+      </div>
+      <a class="case-link" href="https://muctim.tuoitre.vn/khoi-to-3-bi-can-trong-vu-ca-si-miu-le-su-dung-ma-tuy-o-cat-ba-101260514233537659.htm" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-singer" data-spec="Ca sĩ">
+      <div class="card-top"><span class="card-year">Tháng 5 · 2026</span><span class="card-severity sev-4">Mức 4</span></div>
+      <div class="card-name">Long Nhật</div>
+      <div class="card-specialty">Ca sĩ trữ tình · 59 tuổi</div>
+      <div class="card-desc">20/5/2026 — Chuyên án 426A (74 đối tượng). Tổ chức dùng ma túy tại nhà từ tháng 3/2026.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(192,57,43,.1);color:#c0392b;border:1px solid rgba(192,57,43,.25)">Chuyên án 426A</span>
+        <span class="card-pill" style="background:rgba(212,168,83,.1);color:#D4A853;border:1px solid rgba(212,168,83,.2)">Huyền thoại 90s</span>
+      </div>
+      <a class="case-link" href="https://cafebiz.vn/chuyen-an-ma-tuy-426a-dinh-toi-son-ngoc-minh-long-nhat-va-chien-thuat-truy-vet-nguoc-cua-co-quan-dieu-tra-176260520150954844.chn" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+    <div class="case-card spec-singer" data-spec="Ca sĩ">
+      <div class="card-top"><span class="card-year">Tháng 5 · 2026</span><span class="card-severity sev-2">Mức 2</span></div>
+      <div class="card-name">Sơn Ngọc Minh</div>
+      <div class="card-specialty">Ca sĩ · 36 tuổi</div>
+      <div class="card-desc">20/5/2026 — Cùng chuyên án 426A. Khai nghiện từ Tết 2026. Cựu thành viên V.Music.</div>
+      <div>
+        <span class="card-pill" style="background:rgba(192,57,43,.1);color:#c0392b;border:1px solid rgba(192,57,43,.25)">Chuyên án 426A</span>
+      </div>
+      <a class="case-link" href="https://nld.com.vn/dien-vien-son-ngoc-minh-den-nha-ban-de-cung-choi-ma-tuy-196260520124247991.htm" target="_blank" rel="noopener">Xem hồ sơ</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── DASHBOARD ────────────────────────────────────────────── -->
+<section id="dashboard">
+  <div class="section-header">
+    <span class="section-num">03 —</span>
+    <h2 class="section-title">Dashboard phân tích</h2>
+  </div>
+
+  <div class="dashboard-shell">
+    <div class="dashboard-bar">
+      <div class="dash-dot" style="background:#ff5f57"></div>
+      <div class="dash-dot" style="background:#febc2e"></div>
+      <div class="dash-dot" style="background:#28c840"></div>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.07em;color:var(--text-dim);margin-left:8px">vietnam_artist_drug_dashboard_v3 — interactive</span>
+    </div>
+    <div class="dashboard-inner">
+
+      <!-- ═══════════ EMBEDDED WIDGET ═══════════ -->
+      <style>
+      .dashboard-inner *{box-sizing:border-box;margin:0;padding:0}
+      .dashboard-inner .tabs{display:flex;gap:3px;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1.25rem;flex-wrap:wrap}
+      .dashboard-inner .tab{padding:7px 13px;font-size:12px;cursor:pointer;border:0.5px solid transparent;border-bottom:none;border-radius:8px 8px 0 0;color:var(--color-text-secondary);background:transparent;transition:all 0.12s;font-family:'Inter',sans-serif}
+      .dashboard-inner .tab.active{background:var(--color-background-primary);border-color:var(--color-border-tertiary);color:var(--color-text-primary);font-weight:500;margin-bottom:-1px}
+      .dashboard-inner .tab:hover:not(.active){background:var(--color-background-secondary)}
+      .dashboard-inner .panel{display:none}.dashboard-inner .panel.active{display:block}
+      .dashboard-inner .tooltip{position:absolute;background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:12px;padding:12px 14px;font-size:12px;max-width:228px;pointer-events:none;z-index:100;line-height:1.6;font-family:'Inter',sans-serif}
+      .dashboard-inner .tooltip strong{font-weight:500;font-size:13px;color:var(--color-text-primary);display:block;margin-bottom:3px}
+      .dashboard-inner .tooltip .meta{color:var(--color-text-secondary);font-size:11px;margin-bottom:5px}
+      .dashboard-inner .tooltip .desc{color:var(--color-text-primary);font-size:11.5px}
+      .dashboard-inner .bubble{cursor:pointer;transition:opacity 0.15s}
+      .dashboard-inner .bubble:hover{opacity:0.75}
+      .dashboard-inner .bubble.faded{opacity:0.1}
+      .dashboard-inner .axis-label{font-size:10px;fill:var(--color-text-secondary,#888)}
+      .dashboard-inner .section-label{font-size:10px;font-weight:500;fill:var(--color-text-secondary,#888)}
+      .dashboard-inner .insight-card{background:#1e1e1e;border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1rem;cursor:default;transition:background .15s,border-color .15s,box-shadow .15s}
+      .dashboard-inner .insight-card:hover{background:#252525;border-color:rgba(245,198,66,.35);box-shadow:0 0 16px rgba(245,198,66,.08)}
+      .dashboard-inner .insight-title{font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:3px;text-transform:uppercase;letter-spacing:.05em}
+      .dashboard-inner .insight-value{font-size:26px;font-weight:500;color:var(--color-text-primary);line-height:1.2}
+      .dashboard-inner .insight-sub{font-size:11px;color:var(--color-text-secondary);margin-top:3px}
+      .dashboard-inner .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.25rem}
+      .dashboard-inner .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:1.25rem}
+      .dashboard-inner .obs{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;padding:1rem 1.25rem;font-size:12.5px;color:var(--color-text-secondary);line-height:1.75;margin-top:1.25rem}
+      .dashboard-inner .obs strong{color:var(--color-text-primary);font-weight:500}
+      .dashboard-inner .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+      .dashboard-inner .bar-label{font-size:12px;color:var(--color-text-secondary);width:130px;text-align:right;flex-shrink:0}
+      .dashboard-inner .bar-track{flex:1;background:var(--color-background-secondary);border-radius:4px;height:22px;overflow:hidden}
+      .dashboard-inner .bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:500}
+      .dashboard-inner .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11px;color:var(--color-text-secondary);margin-bottom:1rem}
+      .dashboard-inner .legend span{display:flex;align-items:center;gap:5px}
+      .dashboard-inner .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+      .dashboard-inner .sq{width:9px;height:9px;border-radius:2px;display:inline-block}
+      </style>
+
+      <div class="tabs">
+        <button class="tab active" onclick="showTab2('timeline',event)">Timeline</button>
+        <button class="tab" onclick="showTab2('gender',event)">Giới tính</button>
+        <button class="tab" onclick="showTab2('age',event)">Độ tuổi</button>
+        <button class="tab" onclick="showTab2('specialty',event)">Chuyên môn</button>
+        <button class="tab" onclick="showTab2('region',event)">Quê quán</button>
+        <button class="tab" onclick="showTab2('month',event)">Tháng trong năm</button>
+        <button class="tab" onclick="showTab2('career',event)">Giai đoạn sự nghiệp</button>
+      </div>
+
+      <div id="panel2-timeline" class="panel active">
+        <div class="legend">
+          <span><span class="dot" style="background:#D85A30"></span>Ca sĩ / Rapper</span>
+          <span><span class="dot" style="background:#378ADD"></span>Diễn viên</span>
+          <span><span class="dot" style="background:#1D9E75"></span>Người mẫu</span>
+          <span><span class="dot" style="background:#7F77DD"></span>NTK thời trang</span>
+          <span><span class="sq" style="border:1px dashed #888"></span>Kích thước = mức nghiêm trọng</span>
+        </div>
+        <div id="tl2-wrap" style="position:relative;overflow:hidden">
+          <svg id="tl2-svg" style="display:block;width:100%;overflow:visible"></svg>
+          <div id="tt2" class="tooltip" style="display:none;position:absolute"></div>
+        </div>
+        <div style="margin-top:8px;font-size:10.5px;color:var(--color-text-secondary);border-top:0.5px solid var(--color-border-tertiary);padding-top:8px">
+          Trục trái: theo năm (1990–2010) · Trục phải: theo tháng/năm (2018–2026) · Bấm bong bóng để xem chi tiết
+        </div>
+      </div>
+
+      <div id="panel2-gender" class="panel">
+        <div class="g2">
+          <div class="insight-card"><div class="insight-title">Nam</div><div class="insight-value">13</div><div class="insight-sub">81% tổng số</div></div>
+          <div class="insight-card"><div class="insight-title">Nữ</div><div class="insight-value">3</div><div class="insight-sub">19% tổng số</div></div>
+        </div>
+        <div style="position:relative;width:100%;height:210px"><canvas id="genderChart2"></canvas></div>
+        <div class="legend" style="margin-top:10px">
+          <span><span class="sq" style="background:#378ADD"></span>Nam (81%)</span>
+          <span><span class="sq" style="background:#D4537E"></span>Nữ (19%)</span>
+        </div>
+        <div class="obs"><strong>Quan sát:</strong> Tỷ lệ 4:1 nghiêng về nam — phù hợp với nhóm chiếm đa số trong môi trường tiệc khuya và bar. Nữ nghệ sĩ cũng chịu áp lực hình ảnh "trong sạch" cao hơn từ dư luận. <strong>Cả 3 nữ (Lệ Hằng, An Tây, Miu Lê) đều xuất hiện từ 2023 trở đi</strong> — cùng thời điểm truy quét tăng mạnh.</div>
+      </div>
+
+      <div id="panel2-age" class="panel">
+        <div class="g3">
+          <div class="insight-card"><div class="insight-title">Tuổi trung bình</div><div class="insight-value">36</div><div class="insight-sub">Khi bị phát hiện</div></div>
+          <div class="insight-card"><div class="insight-title">Trẻ nhất</div><div class="insight-value">28</div><div class="insight-sub">Bình Gold (1997)</div></div>
+          <div class="insight-card"><div class="insight-title">Lớn nhất</div><div class="insight-value">59</div><div class="insight-sub">Long Nhật (1967)</div></div>
+        </div>
+        <div style="position:relative;width:100%;height:240px"><canvas id="ageChart2"></canvas></div>
+        <div class="obs"><strong>Quan sát:</strong> Nhóm 30–39 tuổi chiếm 50% (8/16 người) — giai đoạn sự nghiệp ổn định, thu nhập cao, áp lực duy trì đỉnh cao nhất. <strong>Nhóm 50+ (Long Nhật 59) cho thấy nghiện không tự dừng theo tuổi tác</strong> và có thể kéo dài nhiều thập kỷ ngầm.</div>
+      </div>
+
+      <div id="panel2-specialty" class="panel">
+        <div style="margin:0.5rem 0 1.5rem">
+          <div class="bar-row"><div class="bar-label">Ca sĩ</div><div class="bar-track"><div class="bar-fill" style="width:43%;background:#D85A30;color:#fff">7 người · 43%</div></div></div>
+          <div class="bar-row"><div class="bar-label">Diễn viên</div><div class="bar-track"><div class="bar-fill" style="width:37%;background:#378ADD;color:#fff">6 người · 37%</div></div></div>
+          <div class="bar-row"><div class="bar-label">Người mẫu</div><div class="bar-track"><div class="bar-fill" style="width:13%;background:#1D9E75;color:#fff">2 · 12%</div></div></div>
+          <div class="bar-row"><div class="bar-label">NTK thời trang</div><div class="bar-track"><div class="bar-fill" style="width:7%;background:#7F77DD;color:#fff">1</div></div></div>
+          <div class="bar-row"><div class="bar-label">Rapper</div><div class="bar-track"><div class="bar-fill" style="width:7%;background:#888780;color:#fff">1</div></div></div>
+        </div>
+        <div class="obs"><strong>Quan sát:</strong> Ca sĩ và diễn viên chiếm 80% — nhóm có độ nổi tiếng cao nhất và lịch sử event/party dày đặc nhất. <strong>Rapper xuất hiện lần đầu năm 2025 (Bình Gold)</strong> — dấu hiệu ma túy đang lan sang thế hệ underground/rap mới nổi.</div>
+      </div>
+
+      <div id="panel2-region" class="panel">
+        <div style="position:relative;width:100%;height:260px"><canvas id="regionChart2"></canvas></div>
+        <div class="legend" style="margin-top:10px">
+          <span><span class="sq" style="background:#D85A30"></span>Miền Trung (5)</span>
+          <span><span class="sq" style="background:#378ADD"></span>Miền Nam (4)</span>
+          <span><span class="sq" style="background:#888780"></span>Không rõ (4)</span>
+          <span><span class="sq" style="background:#1D9E75"></span>Miền Bắc (3)</span>
+        </div>
+        <div class="obs"><strong>Quan sát:</strong> Miền Trung chiếm tỷ lệ cao bất thường (~8% dân số VN nhưng ~31% trong danh sách). <strong>Tất cả đều bị bắt tại TP.HCM hoặc Hà Nội</strong> bất kể quê gốc — hai đô thị vừa là trung tâm showbiz vừa là đầu mối phân phối lớn nhất.</div>
+      </div>
+
+      <div id="panel2-month" class="panel">
+        <div style="position:relative;width:100%;height:260px"><canvas id="monthChart2"></canvas></div>
+        <div class="obs"><strong>Quan sát:</strong> <strong>Tháng 5–7 nổi bật nhất</strong> — trùng với mùa hè, kỳ nghỉ lễ và sự kiện giải trí tăng cao. Chuyên án 426A triển khai tháng 5–6/2026: cả Miu Lê lẫn Long Nhật đều bị bắt tháng 5/2026.</div>
+      </div>
+
+      <div id="panel2-career" class="panel">
+        <div style="margin:0.5rem 0 1.25rem">
+          <div class="bar-row"><div class="bar-label">Đỉnh sự nghiệp</div><div class="bar-track"><div class="bar-fill" style="width:37%;background:#D85A30;color:#fff">6 người · 37%</div></div></div>
+          <div class="bar-row"><div class="bar-label">Đang xuống dốc</div><div class="bar-track"><div class="bar-fill" style="width:37%;background:#BA7517;color:#fff">6 người · 37%</div></div></div>
+          <div class="bar-row"><div class="bar-label">Đã "tàn" / tái xuất</div><div class="bar-track"><div class="bar-fill" style="width:25%;background:#888780;color:#fff">4 người · 25%</div></div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:11px;margin-bottom:1.25rem">
+          <div style="background:var(--color-background-secondary);border-radius:8px;padding:10px">
+            <div style="font-weight:500;color:var(--color-text-primary);margin-bottom:6px;font-size:12px">Đỉnh</div>
+            <div style="color:var(--color-text-secondary);line-height:1.8">Châu Việt Cường<br>Chi Dân · An Tây<br>Nguyễn Công Trí<br>Miu Lê · Sơn Ngọc Minh</div>
+          </div>
+          <div style="background:var(--color-background-secondary);border-radius:8px;padding:10px">
+            <div style="font-weight:500;color:var(--color-text-primary);margin-bottom:6px;font-size:12px">Xuống dốc</div>
+            <div style="color:var(--color-text-secondary);line-height:1.8">Hiệp Gà · Hữu Tín<br>Chu Bin<br>Nhikolai Đinh<br>Bình Gold · Long Nhật</div>
+          </div>
+          <div style="background:var(--color-background-secondary);border-radius:8px;padding:10px">
+            <div style="font-weight:500;color:var(--color-text-primary);margin-bottom:6px;font-size:12px">Đã tàn</div>
+            <div style="color:var(--color-text-secondary);line-height:1.8">Thương Tín<br>Nguyễn Huỳnh<br>Phạm Minh Quốc<br>Lệ Hằng</div>
+          </div>
+        </div>
+        <div class="obs"><strong>Quan sát:</strong> Ma túy không chỉ là "thuốc giảm đau" cho người thất bại — <strong>37% bị bắt ở đỉnh cao</strong>. Nhóm đã tàn (Thương Tín, Nguyễn Huỳnh) phần lớn dùng heroin — kết cục bi thảm hơn nhiều so với thế hệ dùng đá/ketamine ngày nay.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── OBSERVATIONS ────────────────────────────────────────── -->
+<section id="observations">
+  <div class="section-header">
+    <span class="section-num">04 —</span>
+    <h2 class="section-title">Nhận định hệ thống</h2>
+  </div>
+
+  <div class="obs-grid">
+    <div class="obs-card">
+      <div class="obs-num">Obs · 01</div>
+      <h3>Đỉnh cao không miễn nhiễm</h3>
+      <p>37% bị bắt khi đang ở đỉnh sự nghiệp. Ma túy không chỉ là cứu cánh của người thất bại — với nhiều người, nó là <strong>chất bôi trơn xã hội</strong> trong các circle tiệc tùng của giới giàu có và nổi tiếng. Nguyễn Công Trí là ví dụ điển hình nhất.</p>
+    </div>
+    <div class="obs-card">
+      <div class="obs-num">Obs · 02</div>
+      <h3>Chiến dịch 2026 là bước ngoặt</h3>
+      <p>Ba vụ trong một tháng (tháng 5/2026) thông qua chuyên án 426A cho thấy lực lượng chức năng đã chuyển từ <strong>xử lý đơn lẻ sang triệt phá mạng lưới</strong>. 74 đối tượng bị xử lý cùng lúc là quy mô chưa có tiền lệ trong showbiz.</p>
+    </div>
+    <div class="obs-card">
+      <div class="obs-num">Obs · 03</div>
+      <h3>Thế hệ chất kích thích đang đổi</h3>
+      <p>Heroin (1990s–2000s) → Meth (2018–2022) → Ketamine + MDMA (2024–2026). Sự dịch chuyển này không chỉ là xu hướng dùng chất mà còn phản ánh <strong>sự thay đổi trong chuỗi cung ứng</strong> và khẩu vị của nhóm tiệc khuya cao cấp.</p>
+    </div>
+    <div class="obs-card">
+      <div class="obs-num">Obs · 04</div>
+      <h3>Nhóm 30–39: risk peak</h3>
+      <p>50% trong danh sách bị bắt ở độ tuổi 30–39. Đây là giao điểm của thu nhập cao, áp lực duy trì phong độ, và mạng lưới xã hội đủ rộng để tiếp cận. <strong>Không phải tuổi trẻ thiếu kinh nghiệm — mà là tuổi trưởng thành có đủ nguồn lực.</strong></p>
+    </div>
+    <div class="obs-card">
+      <div class="obs-num">Obs · 05</div>
+      <h3>Nữ giới: nạn nhân muộn</h3>
+      <p>Cả 3 nữ nghệ sĩ đều bị bắt từ 2023 trở đi — không phải vì họ bắt đầu dùng muộn hơn, mà vì <strong>áp lực hình ảnh "trong sạch" bảo vệ họ lâu hơn</strong> trước sự chú ý của truyền thông và cơ quan chức năng.</p>
+    </div>
+    <div class="obs-card">
+      <div class="obs-num">Obs · 06</div>
+      <h3>Địa lý bắt giữ vs quê gốc</h3>
+      <p>Dù Miền Trung chiếm ~31% trong danh sách, tất cả đều <strong>bị bắt tại TP.HCM hoặc Hà Nội</strong>. Showbiz là bộ lọc địa lý: nó kéo người từ khắp nơi về hai đầu tàu, nơi cũng là trung tâm phân phối ma túy lớn nhất.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer>
+  <span>Scandal Archive · Nghệ Sĩ & Ma Túy · 1990–2026</span>
+  <span>16 hồ sơ · Dữ liệu công khai · Cập nhật 05/2026</span>
+</footer>
+
+<!-- ── SCRIPTS ─────────────────────────────────────────────── -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+/* ── FILTER CARDS ── */
+function filterCards(spec, btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.case-card').forEach(card=>{
+    const show = spec === 'all' || card.dataset.spec === spec;
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+/* ── ARTIST DATA ── */
+const artists=[
+  {id:0,name:'Thương Tín',year:1990,month:null,age:34,specialty:'Diễn viên',severity:3,color:'#378ADD',desc:'Nghiện heroin từ ~1990 sau khi vợ mất. Dùng hơn 13 năm. Tự cai thành công 2003, không bị truy tố.',side:'left'},
+  {id:1,name:'Nguyễn Huỳnh',year:2000,month:null,age:33,specialty:'Diễn viên',severity:4,color:'#378ADD',desc:'Dính ma túy tại LHP Hà Nội ~2000. Hai lần vào trại cai nghiện. Qua đời tháng 5/2009 vì bệnh, tuổi 42.',side:'left'},
+  {id:2,name:'Phạm Minh Quốc',year:2002,month:null,age:30,specialty:'Diễn viên',severity:2,color:'#378ADD',desc:'Tiếng đồn nghiện từ 2001–2003. Bị tù vì tàng trữ. Sự nghiệp chấm dứt hoàn toàn tại Nhà hát Kịch HN.',side:'left'},
+  {id:3,name:'Hiệp "Gà"',year:2007,month:4,age:30,specialty:'Diễn viên hài',severity:2,color:'#378ADD',desc:'27/4/2007 — Bị bắt tại Hà Nội. Tàng trữ 0.19g heroin. Án 24 tháng, ngồi 17 tháng.',side:'left'},
+  {id:4,name:'Châu Việt Cường',year:2018,month:3,age:36,specialty:'Ca sĩ',severity:5,color:'#D85A30',desc:'5/3/2018 — Dùng ma túy đá, ảo giác nhét tỏi vào miệng cô gái gây tử vong. Án 11 năm tù. Ra tù sớm 5/1/2025.',side:'right'},
+  {id:5,name:'Hữu Tín',year:2022,month:6,age:35,specialty:'Diễn viên hài',severity:3,color:'#378ADD',desc:'11/6/2022 — Bị bắt tại chung cư Giai Việt Q.8, TP.HCM. Khai nghiện 3 năm. Án 7 năm 6 tháng tù (4/2023).',side:'right'},
+  {id:6,name:'Lệ Hằng',year:2023,month:3,age:48,specialty:'Diễn viên',severity:2,color:'#378ADD',desc:'10/3/2023 — Bị bắt mua bán ma túy tại Khâm Thiên, Hà Nội. Đã giải nghệ từ 2012, bán lẻ để kiếm sống.',side:'right'},
+  {id:7,name:'Chu Bin',year:2024,month:6,age:39,specialty:'Ca sĩ',severity:2,color:'#D85A30',desc:'6/6/2024 — Bị tạm giữ cùng 5 người tại Q.10, TP.HCM. Tổ chức sử dụng ma túy. Xử lý hành chính.',side:'right'},
+  {id:8,name:'Nhikolai Đinh',year:2024,month:6,age:29,specialty:'Người mẫu',severity:2,color:'#1D9E75',desc:'25/6/2024 — Bị bắt cùng 9 người tại Mả Lạng Q.1, TP.HCM. Tàng trữ ma túy đá. Án 2 năm tù.',side:'right'},
+  {id:9,name:'Chi Dân',year:2024,month:11,age:35,specialty:'Ca sĩ',severity:3,color:'#D85A30',desc:'14/11/2024 — Bị bắt cùng An Tây tại TP.HCM. Tổ chức sử dụng ketamine cùng anh trai và nhóm bạn.',side:'right'},
+  {id:10,name:'An Tây',year:2024,month:11,age:29,specialty:'Người mẫu',severity:2,color:'#1D9E75',desc:'14/11/2024 — Cùng vụ Chi Dân. Khởi tố thêm tội tàng trữ. Người mẫu lai Tây có profile nổi bật.',side:'right'},
+  {id:11,name:'Nguyễn Công Trí',year:2025,month:6,age:47,specialty:'NTK thời trang',severity:3,color:'#7F77DD',desc:'23/6/2025 — Phát hiện dùng ma túy tại nhà riêng TP.HCM. "Anh cả làng mốt" — thiết kế cho Beyoncé, Zendaya, Michelle Obama.',side:'right'},
+  {id:12,name:'Bình Gold',year:2025,month:7,age:28,specialty:'Rapper',severity:2,color:'#D85A30',desc:'23/7/2025 — Lái xe lạng lách cao tốc Nội Bài–Lào Cai, dương tính cần sa + ketamin. 26/7 bị bắt thêm vì cướp taxi.',side:'right'},
+  {id:13,name:'Miu Lê',year:2026,month:5,age:34,specialty:'Ca sĩ',severity:2,color:'#D85A30',desc:'10/5/2026 — Bị bắt tại bãi tắm Cát Bà, Hải Phòng lúc 12:30. Dương tính meth, ketamine và MDMA. Xử lý hành chính.',side:'right'},
+  {id:14,name:'Long Nhật',year:2026,month:5,age:59,specialty:'Ca sĩ',severity:4,color:'#D85A30',desc:'20/5/2026 — Chuyên án 426A (74 đối tượng). Tổ chức dùng ma túy tại nhà từ tháng 3/2026. Ca sĩ trữ tình huyền thoại thập niên 90.',side:'right'},
+  {id:15,name:'Sơn Ngọc Minh',year:2026,month:5,age:36,specialty:'Ca sĩ',severity:2,color:'#D85A30',desc:'20/5/2026 — Cùng chuyên án 426A. Khai nghiện từ Tết 2026. Cựu thành viên V.Music.',side:'right'}
+];
+
+/* ── TIMELINE ── */
+function drawTimeline2(){
+  const wrap=document.getElementById('tl2-wrap');
+  const W=wrap.clientWidth||660;
+  const H=480;
+  const svg=document.getElementById('tl2-svg');
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.setAttribute('height',H);
+  const PT=38,PB=34,axisY=H-PB,cH=H-PT-PB;
+  const leftW=Math.round(W*0.36);
+  const leftPL=10,leftPR=18;
+  const minYL=1988,maxYL=2012;
+  function xL(year,month){const y=year+(month?(month-0.5)/12:0.5);return leftPL+((y-minYL)/(maxYL-minYL))*(leftW-leftPL-leftPR);}
+  const divX=leftW+12;
+  const rL=divX+14,rR=W-10;
+  const minM=2017*12,maxM=2027*12;
+  function xR(year,month){const m=year*12+(month?month-1:5);return rL+((m-minM)/(maxM-minM))*(rR-rL);}
+  const laneFs=[0.14,0.30,0.48,0.64,0.80];
+  const lY=f=>PT+f*cH;
+  const leftMap=[{id:0,li:0},{id:1,li:2},{id:2,li:4},{id:3,li:1}];
+  leftMap.forEach(({id,li})=>{const a=artists[id];a._x=xL(a.year,a.month);a._y=lY(laneFs[li]);});
+  const rightMap=[{id:4,li:0},{id:5,li:3},{id:6,li:1},{id:7,li:4},{id:8,li:2},{id:9,li:0},{id:10,li:3},{id:11,li:4},{id:12,li:2},{id:13,li:1},{id:14,li:3},{id:15,li:0}];
+  rightMap.forEach(({id,li})=>{const a=artists[id];a._x=xR(a.year,a.month);a._y=lY(laneFs[li]);});
+  let ns='';
+  ns+=`<rect x="0" y="0" width="${leftW+6}" height="${H}" fill="#181818" opacity="0.6" rx="8"/>`;
+  ns+=`<rect x="${divX+6}" y="0" width="${W-divX-6}" height="${H}" fill="#181818" opacity="0.3" rx="8"/>`;
+  ns+=`<text x="${leftPL+4}" y="14" class="section-label">1990 – 2010 (theo năm)</text>`;
+  ns+=`<text x="${rL+4}" y="14" class="section-label">2018 – 2026 (theo tháng)</text>`;
+  ns+=`<line x1="${divX}" y1="20" x2="${divX}" y2="${axisY}" stroke="#333" stroke-width="0.5" stroke-dasharray="4,3"/>`;
+  [1990,1995,2000,2005,2010].forEach(y=>{const x=xL(y);if(x<leftPL||x>leftW)return;ns+=`<line x1="${x}" y1="${PT}" x2="${x}" y2="${axisY}" stroke="#222" stroke-width="0.5" stroke-dasharray="2,4"/>`;ns+=`<text x="${x}" y="${axisY+14}" text-anchor="middle" class="axis-label">${y}</text>`;});
+  [2018,2019,2020,2021,2022,2023,2024,2025,2026].forEach(y=>{const x=xR(y,1);if(x<rL-4||x>rR+4)return;ns+=`<line x1="${x}" y1="${PT}" x2="${x}" y2="${axisY}" stroke="#222" stroke-width="0.5" stroke-dasharray="2,4"/>`;ns+=`<text x="${x}" y="${axisY+14}" text-anchor="middle" class="axis-label">${y}</text>`;});
+  ns+=`<line x1="${leftPL}" y1="${axisY}" x2="${W-10}" y2="${axisY}" stroke="#333" stroke-width="0.75"/>`;
+  artists.forEach(a=>{if(a._x===undefined)return;ns+=`<line x1="${a._x}" y1="${a._y}" x2="${a._x}" y2="${axisY}" stroke="${a.color}" stroke-width="0.5" opacity="0.2" stroke-dasharray="2,3"/>`;});
+  artists.forEach(a=>{
+    if(a._x===undefined)return;
+    const r=7+a.severity*3.5;
+    const shortName=a.name.split(' ').slice(-1)[0];
+    ns+=`<circle class="bubble" cx="${a._x}" cy="${a._y}" r="${r}" fill="${a.color}" opacity="0.87" stroke="#0a0a0a" stroke-width="2" data-id2="${a.id}" onclick="tlClick2(event,${a.id})"/>`;
+    ns+=`<text x="${a._x}" y="${a._y-r-4}" text-anchor="middle" style="font-size:9px;fill:#666;pointer-events:none">${shortName}</text>`;
+  });
+  svg.innerHTML=ns;
+}
+
+function tlClick2(e,id){
+  e.stopPropagation();
+  const a=artists[id];
+  const tt=document.getElementById('tt2');
+  const svgEl=document.getElementById('tl2-svg');
+  const rect=svgEl.getBoundingClientRect();
+  const W=svgEl.clientWidth||660;
+  const H=480;
+  const sx=rect.width/W;
+  const sy=rect.height/H;
+  const px=a._x*sx,py=a._y*sy;
+  const r=(7+a.severity*3.5)*sx;
+  const mns=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const ds=a.month?`${mns[a.month]} ${a.year}`:`${a.year} (ước tính)`;
+  tt.innerHTML=`<strong>${a.name}</strong><div class="meta">${ds} · Tuổi ${a.age} · ${a.specialty}</div><div class="desc">${a.desc}</div>`;
+  let left=px+r+10;
+  if(left+232>rect.width) left=px-r-242;
+  let top=py-22;
+  if(top<0) top=4;
+  tt.style.left=left+'px';
+  tt.style.top=top+'px';
+  tt.style.display='block';
+  document.querySelectorAll('[data-id2]').forEach(b=>{b.classList.toggle('faded',parseInt(b.dataset.id2)!==id);});
+}
+
+document.addEventListener('click',()=>{
+  const tt=document.getElementById('tt2');
+  if(tt)tt.style.display='none';
+  document.querySelectorAll('[data-id2]').forEach(b=>b.classList.remove('faded'));
+});
+
+/* ── TABS ── */
+function showTab2(id,e){
+  document.querySelectorAll('.dashboard-inner .tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.dashboard-inner .panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel2-'+id).classList.add('active');
+  e.target.classList.add('active');
+  if(id==='gender'&&!window._g2){drawGender2();window._g2=1}
+  if(id==='age'&&!window._a2){drawAge2();window._a2=1}
+  if(id==='region'&&!window._r2){drawRegion2();window._r2=1}
+  if(id==='month'&&!window._m2){drawMonth2();window._m2=1}
+}
+
+/* ── CHART DEFAULTS ── */
+Chart.defaults.color='#999';
+Chart.defaults.borderColor='rgba(255,255,255,0.06)';
+
+function drawGender2(){new Chart(document.getElementById('genderChart2'),{type:'doughnut',data:{labels:['Nam (81%)','Nữ (19%)'],datasets:[{data:[13,3],backgroundColor:['#378ADD','#D4537E'],borderWidth:0,hoverOffset:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.label}: ${c.raw} người`}}},cutout:'62%'}});}
+function drawAge2(){new Chart(document.getElementById('ageChart2'),{type:'bar',data:{labels:['< 30','30–34','35–39','40–49','50+'],datasets:[{label:'Số nghệ sĩ',data:[2,4,6,2,2],backgroundColor:['#5DCAA5','#378ADD','#378ADD','#85B7EB','#B5D4F4'],borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.raw} người`}}},scales:{y:{beginAtZero:true,ticks:{stepSize:1},grid:{color:'rgba(255,255,255,0.04)'}},x:{grid:{display:false}}}}});}
+function drawRegion2(){new Chart(document.getElementById('regionChart2'),{type:'bar',data:{labels:['Miền Trung','Miền Nam','Không rõ','Miền Bắc'],datasets:[{label:'Số nghệ sĩ',data:[5,4,4,3],backgroundColor:['#D85A30','#378ADD','#888780','#1D9E75'],borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{stepSize:1},grid:{color:'rgba(255,255,255,0.04)'}},x:{grid:{display:false}}}}});}
+function drawMonth2(){new Chart(document.getElementById('monthChart2'),{type:'bar',data:{labels:['T1','T2','T3','T4','T5','T6','T7','T8','T9','T10','T11','T12'],datasets:[{label:'Số vụ',data:[0,0,2,1,3,3,1,0,0,0,2,0],backgroundColor:'#7F77DD',borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{title:([c])=>`Tháng ${c.label.replace('T','')}`,label:c=>`${c.raw} vụ`}}},scales:{y:{beginAtZero:true,ticks:{stepSize:1},grid:{color:'rgba(255,255,255,0.04)'}},x:{grid:{display:false},ticks:{autoSkip:false}}}}});}
+
+/* ── INIT ── */
+drawTimeline2();
+window.addEventListener('resize',()=>{drawTimeline2();});
+</script>
+</body>
+</html>
